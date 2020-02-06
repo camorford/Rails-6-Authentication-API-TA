@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+testing: 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1) Create a user :
+  - User.create!(email: 'example@mail.com', password: '1234', password_confirmation: '1234')
+  
+2) curl : 
+    curl -H "Content-Type: application/json" -X POST -d '{"email":"example@mail.com", "password":"1234"}' http://localhost:3000/authenticate
+    { receive auth token } 
+    
