@@ -1,6 +1,6 @@
 # README
 
-testing: 
+How to test: 
 
 1) Create a user :
   - User.create!(email: 'example@mail.com', password: '1234', password_confirmation: '1234')
